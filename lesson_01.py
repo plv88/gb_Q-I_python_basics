@@ -30,7 +30,7 @@ while True:
     time = input('введи время в секундах')
     if time.isdigit():
         time = int(time)
-        print(f'Ты ввел {time} секунд. Это {time // 3600}:{1}:{time % 60}')
+        print(f'Ты ввел {time} секунд. Это {time // 3600}:{time%3600//60}:{time % 60}')
         break
     else:
         print('Введи только цифры')
